@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 2 - HTML</title>
+  </head>
+  <body>
+    <!-- 
+    <header>Lo referido a la navegacion</header>
+    <main>El contenido principal tenemos section y article para usar</main>
+    <footer>Pie de pagina</footer> 
+    -->
+    <!-- Ctrl / Ctrl k c ctrl k u alt shift a -->
+
+    <!-- Agrupar todo lo referido a una barra de navagación -->
+    <header>
+      <a href="#">
+        <img src="https://via.placeholder.com/50" alt="Logo" />
+      </a>
+
+      <!-- ul>li*3>a -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <hr />
+      <!-- Section 1 -->
+      <section>
+        <div>
+          <h1>Bienvenidos a mi pagina web</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, deleniti!
+          </p>
+          <a href="#">Contacto</a>
+        </div>
+
+        <img src="https://via.placeholder.com/200" alt="" />
+      </section>
+
+      <hr />
+
+      <!-- Section 2 -->
+      <section>
+        <h2>Mis servicios</h2>
+
+        <!-- Servicio 1 -->
+        <div>
+          <h3>Páginas web</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#">Comprar</a>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div>
+          <h3>Páginas web</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#">Comprar</a>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Contacto</h2>
+
+        <form>
+          <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Lionel " />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="leomessi@messi.com" id="email" />
+          </div>
+
+          <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" placeholder="Ingresa una contraseña" />
+          </div>
+
+          <div>
+            <label for="age">Edad</label>
+            <input type="number" id="age" min="0" max="150" />
+          </div>
+
+          <div>
+            <input type="checkbox" id="spam" />
+            <label for="spam">Acepto recibir spam todos los dias</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="terms" />
+            <label for="terms">Acepto términos y condiciones</label>
+          </div>
+
+          <div>
+            <p>Gusto de helado favorito:</p>
+
+            <div>
+              <input type="radio" id="chocolate" name="gustos" />
+              <label for="chocolate">Chocolate</label>
+            </div>
+
+            <div>
+              <input type="radio" id="americana" name="gustos" />
+              <label for="americana">Americana</label>
+            </div>
+
+            <div>
+              <input type="radio" id="limon" name="gustos" />
+              <label for="limon">Limon</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="juego">Jugar</label>
+            <select name="juego" id="juego">
+              <option value="" disabled selected hidden>Elegi una</option>
+              <option value="piedra">Piedra</option>
+              <option value="papel">Papel</option>
+              <option value="tijera">Tijera</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <br />
+            <textarea name="mensaje" id="mensaje" maxlength="255"></textarea>
+          </div>
+
+          <div>
+            <label for="tel">Telefono</label>
+            <input type="tel" id="tel" />
+          </div>
+
+          <fieldset>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" />
+          </fieldset>
+
+          <div>
+            <p>Otros</p>
+            <input type="color" />
+            <br />
+            <input type="range" min="0" max="5" />
+            <br />
+            <input type="file" size="10" />
+            <br />
+            <input type="search" />
+            <br />
+            <input type="image" />
+          </div>
+
+          <input type="submit" value="Enviar" />
+          <!-- <button>Enviar</button> -->
+        </form>
+      </section>
+      <hr />
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+      <p>Hecho con ♥ en Nucba</p>
+      <!-- win + . -->
+    </footer>
+  </body>
+</html>
