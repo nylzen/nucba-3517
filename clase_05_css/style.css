@@ -1,0 +1,152 @@
+
+/* Container */
+.container {
+    background-color: #282828;
+    padding: 16px;
+    border-radius: 16px;
+    width: fit-content;
+    margin: 20px 0;
+}
+
+
+
+/* 
+Selectores
+universal *{ estilos: valor;}
+etiqueta { estilos: valor;}
+#nombreId { estilos: valor;}
+.nombreClase { estilos: valor;}
+*/
+
+#selectorId {
+    color: #8c54fb;
+}
+
+.selectorClase {
+    color: #ff005c;
+}
+
+h5 {
+    color: #e11d48;
+}
+
+/* Cajas */
+.caja {
+    width: 100px;
+    height: 100px;
+    background: #6b7280;
+    text-align: center;
+    margin: 20px 0 ;
+}
+
+.caja-mediana {
+    width: 200px;
+    height: 200px;
+    background: #e11d48;
+    text-align: center;
+    margin: 20px 0 ;
+}
+
+.caja-grande {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background: #8c54fb;
+}
+
+/* unidades relativas */
+.small-font {
+    font-size: 10px
+}
+
+.em {
+    font-size: 3em;
+}
+
+
+.rem {
+    /* Va a valer 32px, porque el tamaño por defecto es 16px */
+    font-size: 2rem;
+}
+
+.porcentaje {
+    background: #8c54fb;
+    width: 50%;
+    height: 50%;
+}
+
+.vh {
+    height: 10vh;
+    background:#8c54fb;
+}
+
+.vw {
+    width: 10vw;
+    background:#8c54fb;
+}
+
+/* background */
+.bg-color {
+    background-color: crimson;
+}
+
+.bg-img {
+    background-image: url("./img/bg-pattern.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-repeat {
+    background-image: url('./img/bg-repeat.png');
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat;
+}
+
+.bg-attach {
+    /* width: 500px; */
+    /* height: 200px; */
+    background-image: url('./img/bg-pattern.jpg');
+    /* background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); */
+    background-attachment: fixed;
+}
+
+.bg-position {
+    /* background-image: url('./img/messi.webp'); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+
+    /* Atajo shorthand */
+    background: url('./img/messi.webp') center/cover no-repeat;
+}
+
+.color p {
+    color: crimson;
+}
+
+/* Box shadow */
+
+.offsetXY {
+    background:#8c54fb;
+    box-shadow: 10px 10px;
+}
+
+.blurRadius {
+    background:#8c54fb;
+    box-shadow: 10px 10px 20px;
+}
+
+.spreadRadius {
+    background:#8c54fb;
+    box-shadow: 10px 10px 20px 10px;
+}
+
+.colorShadow {
+    background: #8c54fb;
+    box-shadow: 10px 10px 20px 10px rgba(220, 20, 60, 0.218);
+}
+
+.inset {
+    background: #8c54fb;
+    box-shadow: inset 10px 10px 20px 10px rgba(220, 20, 60, 0.7);
+}
