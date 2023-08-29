@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: #131415;   
+  color: white;
+}
+
+#hero {
+    padding-top: 100px;
+    height: 50vh;
+     /* background-image: url('../img/messi.webp'); */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* background: url('../img/messi.webp') center/cover no-repeat; */
+    /* background-attachment: fixed; */
+    
+}
+
+.navbar {
+    /* height: 100vh; */
+    background-color: red;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+.hero .hero-info .title {
+    background: red;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem; /*32px*/
+    letter-spacing: 5px;
+    /* background: blue; */
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 1.2rem; /*19px*/
+    /* letter-spacing: 2px; */
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.text {
+    line-height: 1.5;
+}
