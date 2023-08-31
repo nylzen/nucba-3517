@@ -1,0 +1,184 @@
+.container {
+  background: #282828;
+  padding: 16px;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.text-span {
+  color: #ff005c;
+  font-size: 20px;
+}
+
+/* Overflow */
+
+.overflow-box {
+  width: 150px;
+  height: 100px;
+  background: #8c54fb;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+  /* overflow-x: scroll; */
+}
+
+.auto {
+  overflow: auto;
+}
+
+/* Padding */
+
+.padding {
+    background:#8c54fb;
+    /* padding: 20px; A todos los lados */
+    /* padding: 20px 40px; 20 arriba/abajo 40 izq/der*/
+    /* padding: 20px 40px 7px; 20arriba 40 izq/der 7 abajo*/
+    /* padding: 20px 30px 40px 50px; Como las agujas del reloj arriba derecha abajo izq */
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 80px;
+}
+
+/* border */
+.border, .dashed, .double, .dotted {
+    padding: 5px 15px;
+    margin-bottom:1rem ;
+}
+
+.border {
+    border: 5px solid #8c54fb;
+    /* border-top: 1px solid red; */
+    /* border-bottom: 1px solid red; */
+}
+
+.dashed {
+    border: 5px dashed #8c54fb;
+}
+
+.dotted {
+    border: 5px dotted #8c54fb;
+}
+
+.double {
+    border: 5px double #8c54fb;
+    /* border: 5px outset #8c54fb; */
+    /* border: 5px inset #8c54fb; */
+}
+
+.radius {
+    padding: 10px;
+    background: #8c54fb;
+    /* border-radius: 8px 100px 40px 10px;Arriba izq arriba der / abajo der abajo izq */
+    border-radius: 8px;
+}
+
+.caja {
+    background: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+/* margin */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background:#8c54fb;
+    border-radius: 8px;
+    margin: 0 0 10px;
+}
+
+.margin {
+    margin: 0 0 10px;
+    /* margin-bottom: 10px; */
+}
+
+.block {
+    border: 1px solid #8c54fb;
+    padding: 1rem;
+    /* display: inline; */
+}
+
+.inline {
+    border: 1px solid #8c54fb;
+    /* display: block; */
+    margin-bottom: 10px;
+}
+
+/* Positions */
+
+.relative {
+    background:#ff005c;
+    position: relative;
+    /* position: sticky; */
+    top: 0;
+    left: 100px;
+    /* top/left/right/bottom */
+}
+
+.absolute-container {
+    background: #282828;
+    padding: 16px;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 20px 0;
+    position: relative;
+  }
+
+.absolute{
+    background: #ff005c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* left: 100px; */
+}
+
+.card {
+    position: relative;
+    width: fit-content;
+    background: #282828;
+    padding: 1rem;
+}
+
+.descuento {
+    background:#8c54fb;
+    padding: 1rem;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.wapp {
+    background: rgb(60, 176, 60);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-card {
+    background: crimson;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
