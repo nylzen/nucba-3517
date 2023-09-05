@@ -1,0 +1,284 @@
+.container,
+.column-container,
+.ac-container,
+.container-shrink {
+  background: #282828;
+  padding: 16px;
+  border-radius: 1rem;
+  margin: 20px 0;
+}
+
+/* Caja flex */
+.caja-flex {
+  background: #8c54fb;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row; /* Este es el comportamiento por defecto */
+  gap: 10px;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.column-reverse {
+  display: flex;
+  gap: 10px;
+  flex-direction: column-reverse;
+}
+
+.wrap {
+  display: flex;
+  gap: 1rem;
+  max-width: 250px;
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  display: flex;
+  gap: 1rem;
+  max-width: 250px;
+  flex-wrap: nowrap;
+}
+
+/* Flex flow es un atajo / shorthand */
+
+.flow {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+  max-width: 250px;
+}
+
+/* Justify content */
+.jc-start {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start; /* el por defecto */
+}
+
+.jc-end {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.jc-center {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.jc-between {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.jc-around {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.jc-evenly {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+/* align-items */
+.column-container {
+  min-height: 500px;
+}
+
+.ai-start {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.ai-end {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.ai-center {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ai-stretch {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.caja-flex-stretch {
+  background: crimson;
+  width: 100px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.ai-baseline {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.baseline-1 {
+  padding: 1.2rem;
+}
+
+.baseline-2 {
+  padding-top: 30px;
+}
+
+.baseline-3 {
+  padding-top: 100px;
+  background: crimson;
+}
+
+/* Align-content */
+.ac-container {
+  min-height: 500px;
+  max-width: 330px;
+}
+
+.ac-start {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.ac-end {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.ac-center {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.ac-between {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.ac-around {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.ac-stretch {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+/* Propiedades para los hijos */
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.order-1 {
+  background: crimson;
+  order: 2;
+}
+
+.order-2 {
+  background: cornflowerblue;
+  order: 3;
+}
+
+.order-3 {
+  order: 1;
+}
+
+/* grow */
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+/* shrink */
+.container-shrink {
+  max-width: 300px;
+}
+
+.shrink-1 {
+  background: crimson;
+  flex-shrink: 0;
+}
+
+.shrink-2 {
+  flex-shrink: 2;
+}
+
+.shrink-3 {
+  flex-shrink: 1;
+}
+
+/* flex-basis */
+.basis-1 {
+  flex-basis: 200px;
+}
+
+.basis-2 {
+  flex-basis: 500px;
+}
+
+.basis-3 {
+  flex-basis: 150px;
+}
+
+/* alig-self */
+
+.self {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.self-1 {
+  align-self: flex-start;
+}
+
+.self-3 {
+  align-self: flex-end;
+}
