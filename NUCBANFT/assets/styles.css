@@ -27,6 +27,13 @@ body {
 
   /* Fonts */
   --font-poppins: "Poppins";
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+
+  --font-sm: 14px;
 }
 
 * {
@@ -36,4 +43,55 @@ body {
   list-style-type: none;
   text-decoration: none;
   font-family: var(--font-poppins);
+}
+
+/* Header */
+.header {
+  background: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+}
+
+.logo {
+  height: 40%;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 10rem;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: var(--font-sm);
+}
+
+/* TODO: PSEUDOCLASE */
+.font a {
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+}
+/* .navbar-list li:first-child > a {
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+} */
+
+.cart-icon {
+  height: 20px;
+  cursor: pointer;
 }
