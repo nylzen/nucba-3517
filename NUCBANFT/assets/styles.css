@@ -129,6 +129,8 @@ main {
   font-size: var(--font-xl);
   font-weight: var(--font-black);
   color: var(--text-white);
+  min-width: 500px;
+  width: 80%;
 }
 
 .hero-info p {
