@@ -1,0 +1,16 @@
+@media (max-width: 992px) {
+  #hero {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .hero-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-card {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #131415;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  border-radius: 1rem;
+  background: rgb(186, 186, 186);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 90%;
+  gap: 20px;
+}
+
+.caja1,
+.caja2,
+.caja3 {
+  width: 200px;
+  height: 200px;
+  background: #0c1221;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  border-radius: 1rem;
+}
+
+/* Fondo */
+.caja1 {
+  /* radial */
+  /* background: radial-gradient(#f68d3c, #3f87a6); */
+
+  /* repeating gradient  */
+  /* background: repeating-linear-gradient(#f68d3c, #3f8 50px); */
+
+  /* linear-gradient */
+  /* background: linear-gradient(70deg, #f68d3c, #3f8, blue, red, greenyellow); */
+
+  /* Hacia una direccion */
+  /* background: linear-gradient(45deg, #3f8, #f68d3c); */
+  /* background: #0099f7; fallback for old browsers */
+
+  /* background: linear-gradient(45deg, #f11712 10%, #0099f7); */
+}
+
+/* Texto */
+/* .caja2 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #3f8, black);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+} */
+
+/* Ambos */
+/* .caja3 {
+  background: linear-gradient(34deg, #3f8, #302b63 60%);
+}
+
+.caja3 span {
+  background: linear-gradient(to right, crimson, #f5af19);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 3rem;
+  font-weight: 800;
+} */

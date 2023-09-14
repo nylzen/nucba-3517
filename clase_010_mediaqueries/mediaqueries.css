@@ -1,0 +1,58 @@
+/* MEDIAQUERIES */
+/* DESKTOP FIRST */
+@media (max-width: 1200px) {
+  body {
+    background: crimson;
+  }
+
+  .container {
+    background: #131415;
+  }
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    background: #fff;
+    color: brown;
+  }
+
+  .caja2 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    background: cornflowerblue;
+  }
+  .caja2 {
+    display: flex;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .caja1,
+  .caja2,
+  .caja3 {
+    background: blue;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 2rem;
+  }
+
+  .caja1 {
+    background: crimson;
+    color: #fff;
+    width: 550px;
+  }
+}
