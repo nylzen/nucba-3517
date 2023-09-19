@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nucba NFT Landing</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./tuki.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
   </head>
   <body>
     <header class="header">
       <img src="./assets/img/logo.png" alt="Logo de NucbaNFT" class="logo" />
       <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/img/menu.png" alt="Menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Si tengo un elemento antes de lo que quiero mostrar uso ~,
+          Si el elemento esta JUSTO despues uso el +
+        -->
+        <!-- <p>holis</p> -->
+
         <ul class="navbar-list">
           <li class="font"><a href="#hero">Home</a></li>
           <li><a href="#">Descubre</a></li>
@@ -19,11 +29,150 @@
           <li><a href="#">Contactanos</a></li>
         </ul>
 
-        <img
-          src="./assets/img/cart-icon.svg"
-          alt="carrito de compras"
-          class="cart-icon"
-        />
+        <!-- CARRITO DESPLEGABLE -->
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./assets/img/cart-icon.svg"
+            alt="carrito de compras"
+            class="cart-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+
+        <!-- CARRITO -->
+        <div class="cart">
+          <h2>Tus NFTs</h2>
+
+          <!--VAMOS A TENER PRODUCTOS -->
+          <!-- producto $ -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Item" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.3 ETH</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">7</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- /producto $ -->
+
+          <!-- producto $ -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Item" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.3 ETH</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">7</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- /producto $ -->
+
+          <!-- producto $ -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Item" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.3 ETH</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">7</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- /producto $ -->
+
+          <!-- producto $ -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Item" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.3 ETH</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">7</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- /producto $ -->
+
+          <!-- producto $ -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Item" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.3 ETH</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">7</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- /producto $ -->
+
+          <!-- producto $ -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Item" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.3 ETH</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">7</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- /producto $ -->
+
+          <!-- producto $ -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Item" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.3 ETH</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">7</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- /producto $ -->
+
+          <span class="divider"></span>
+
+          <!-- precio total -->
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>7 eth</span>
+          </div>
+          <!-- BOTON DE COMPRAR -->
+          <button class="btn-add">Comprar</button>
+        </div>
       </nav>
     </header>
     <main>

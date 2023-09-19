@@ -50,8 +50,123 @@ body {
 }
 
 /*  ================== HEADER ==================*/
+/* Ocultamos menu hamburgesa */
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+  display: none;
+}
+
+/* CARRITO */
+.cart {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  background: linear-gradient(to top, #121e3c, var(--background));
+  padding: 50px 30px;
+  height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  display: none;
+  overflow: scroll;
+}
+
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #2323234f;
+  border: 1px solid var(--electric);
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.cart-item img {
+  height: 65px;
+  width: 65px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+}
+
+.item-title {
+  color: var(--text-white);
+  font-size: 14px;
+  font-weight: var(--semibold);
+}
+
+.item-bid {
+  color: var(--text-gray);
+  font-size: 12px;
+}
+
+.item-price {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  font-weight: var(--font-black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.item-handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quantity-handler {
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: var(--font-semibold);
+  border: 1px solid var(--electric);
+}
+
+.item-quantity {
+  color: var(--text-gray);
+}
+
+.down {
+  background-color: var(--secondary);
+}
+
+.divider {
+  border: 0.5px solid var(--electric);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cart-total p {
+  color: var(--text-white);
+  font-weight: var(--font-bold);
+}
+
+.cart-total span {
+  font-size: var(--font-sd);
+}
+
+/* Toggle del carro */
+#cart-toggle:checked ~ .cart {
+  display: flex;
+}
+
+/* ---------- */
+
 .header {
-  background: var(--secondary);
+  /* background: var(--secondary); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +174,9 @@ body {
   position: fixed;
   width: 100%;
   height: 65px;
+
+  /* Agregado en la clase mediaquieries */
+  background: linear-gradient(to bottom, #121e3c, var(--background));
 }
 
 .logo {
@@ -130,9 +248,15 @@ main {
 .hero-info h1 {
   font-size: var(--font-xl);
   font-weight: var(--font-black);
-  color: var(--text-white);
+  /* color: var(--text-white); */
   min-width: 500px;
   width: 80%;
+
+  /* Agregado clase mq */
+  background: linear-gradient(to top, #30cfd0, #c43ad6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hero-info p {

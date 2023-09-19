@@ -1,0 +1,146 @@
+/* Tablet */
+@media (max-width: 992px) {
+  .menu-label {
+    display: flex;
+    order: 2;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  .navbar {
+    gap: 30px;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--nav-bg);
+    border: 2px solid var(--electric);
+    border-top: 0;
+    padding: 45px 30px;
+    border-radius: 0 0 15px 15px;
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .navbar-list {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-info {
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .hero-card {
+    display: none;
+  }
+
+  .hero-info h1 {
+    max-width: 500px;
+    min-width: unset;
+    width: 90%;
+  }
+
+  .hero-info p {
+    max-width: 650px;
+    width: 90%;
+  }
+
+  /* Info */
+  .info-cards-container {
+    flex-direction: column;
+  }
+
+  /* Discover */
+  #discover {
+    text-align: center;
+  }
+
+  .discover-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .discover-cards {
+    flex-direction: column;
+  }
+
+  .discover-cards img {
+    width: 100%;
+  }
+
+  /* Products */
+  .categories {
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+
+  .category {
+    width: 120px;
+  }
+}
+
+/* celus */
+@media (max-width: 578px) {
+  .cart {
+    left: 0;
+    width: 100%;
+  }
+  /* info */
+  #info h2 {
+    text-align: center;
+    width: 90%;
+  }
+
+  /* discover */
+  #discover h2 {
+    width: 100%;
+  }
+
+  .discover-text {
+    width: 100%;
+    line-height: 30px;
+    padding: 10px;
+    gap: 50px;
+  }
+
+  .discover-text a {
+    font-size: 20px;
+  }
+
+  .discover-cards img {
+    width: 90%;
+  }
+
+  /* Productos */
+  .categories {
+    max-width: 300px;
+  }
+
+  .products-container {
+    width: 80%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  /* Footer */
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
