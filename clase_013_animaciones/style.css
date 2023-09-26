@@ -1,0 +1,304 @@
+:root {
+    --fiveSeconds: 5s;
+}
+.container {
+    background: #282828;
+    display: flex;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: crimson;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Translate */
+
+/* Creamos nuestra primer animacion */
+@keyframes translate {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(500px, 20px);
+    }
+}
+
+.translate {
+    /* transform: translate(50px, 50px) */
+    animation-name: translate;
+    animation-duration: 2s ;
+    /* animation-iteration-count: infinite; */
+}
+
+
+/* Creamos nuestra primer animacion */
+@keyframes translateY {
+    0% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.translateY {
+    animation-name: translateY;
+    animation-duration: 3s;
+}
+
+/* Creamos nuestra primer animacion */
+@keyframes translateX {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+.translateX {
+    animation-name: translateX;
+    animation-duration: 2s;
+}
+
+/* Rotate */
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate .5s ;
+}
+
+@keyframes rotate-negative {
+    0% {
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.rotate-negative {
+    animation: rotate-negative .5s;
+}
+
+/* Scale */
+@keyframes scaleX {
+    0% {
+        transform: scaleX(1)
+    }
+    100%{
+        transform: scaleX(1.1);
+    }
+}
+
+.scaleX {
+    animation: scaleX 2s 7;
+}
+
+@keyframes scaleY {
+    0% {
+        transform: scaleY(1);
+        background: blue;
+    }
+    100%{
+        transform: scaleY(1.1);
+        background: greenyellow
+    }
+}
+
+.scaleY {
+    animation: scaleY 2s 7;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.2);
+    }
+
+    20%{
+        transform: scale(0.9);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.scale {
+    animation: scale 2s;
+}
+
+@keyframes skewX {
+    from{
+        transform: skewX(0deg);
+    }
+    to {
+        transform: skewX(10deg);
+    }
+}
+
+
+.skewX {
+    animation: skewX 2s infinite;
+}
+
+@keyframes skewY {
+    from{
+        transform: skewY(0deg);
+    }
+    to {
+        transform: skewY(10deg);
+    }
+}
+
+.skewY {
+    animation: skewY 2s infinite;
+}
+
+@keyframes skew {
+    from{
+        transform: skew(0deg);
+    }
+    to {
+        transform: skew(10deg);
+    }
+}
+
+.skew {
+    animation: skew 2s infinite;
+}
+
+/* transition */
+
+.transition-duration {
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.transition-duration:hover {
+    background: cornflowerblue;
+    width: 250px;
+    height: 250px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+/* transition timing function */
+
+.transition-timing {
+    text-align: center;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
+}
+
+.transition-timing:hover {
+    background: coral;
+    width: 220px;
+    height: 220px;
+    transform: rotate(10deg)
+}
+
+/* transition delay */
+.transition-delay {
+    text-align: center;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+
+.transition-delay:hover {
+    background-color: aquamarine;
+    width: 220px;
+    height: 220px;
+}
+
+/* shorthand */
+
+.transition-shorthand {
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.transition-shorthand:hover {
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.3);
+}
+
+
+/* Animacion */
+@keyframes moverCaja {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(500px);
+        /* width: 230px; Aca empieza a alterar los demas elementos*/
+    }
+}
+
+.animada {
+    animation-name:moverCaja ;
+    animation-duration: 2s;
+}
+
+.infinita {
+    animation-iteration-count: infinite;
+}
+
+.alternada {
+    animation-direction: alternate;
+}
+
+.delay {
+    animation-delay: 2s;
+}
+
+.timing {
+    animation-timing-function: ease-in-out;
+}
+
+.paused:hover {
+    animation-play-state: paused;
+}
+
+.animation-shorthand {
+    /* Para el shorthand, nombre duracion,  infita, alternada, 10s delay*/
+    animation: moverCaja 2s 1s infinite alternate;
+    /* animation-fill-mode: forwards; */
+}
+
+/* Test */
