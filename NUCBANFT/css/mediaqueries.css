@@ -27,11 +27,18 @@
     border-top: 0;
     padding: 45px 30px;
     border-radius: 0 0 15px 15px;
-    display: none;
+    /* display: none; */
+    z-index: 2;
+    transform: translateX(200%);
+    transition: all 0.5s ease;
   }
 
-  #menu-toggle:checked ~ .navbar-list {
+  /* #menu-toggle:checked ~ .navbar-list {
     display: flex;
+  } */
+
+  #menu-toggle:checked ~ .navbar-list {
+    transform: translateX(0);
   }
 
   /* Hero */

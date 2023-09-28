@@ -4,8 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nucba NFT Landing</title>
+    <!-- favicon -->
+    <!-- <link
+      rel="shortcut icon"
+      href="./assets/img/favicon/copa-mundial.png"
+      type="image/x-icon"
+    /> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon/favicon-16x16.png"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mediaqueries.css" />
+    <link rel="stylesheet" href="./css/animaciones.css" />
   </head>
   <body>
     <header class="header">
@@ -23,19 +55,26 @@
 
         <ul class="navbar-list">
           <li class="font"><a href="#hero">Home</a></li>
-          <li><a href="#">Descubre</a></li>
-          <li><a href="#">BTC</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">Contactanos</a></li>
+          <li><a href="#discover">Descubre</a></li>
+          <li><a href="#products">BTC</a></li>
+          <li>
+            <a href="https://www.youtube.com/c/Nucbaok" target="_blank"
+              >YouTube</a
+            >
+          </li>
+          <li>
+            <a href="https://www.nucba.com.ar" target="_blank">Contactanos</a>
+          </li>
         </ul>
 
         <!-- CARRITO DESPLEGABLE -->
         <label for="cart-toggle" class="cart-label">
-          <img
+          <!-- <img
             src="./assets/img/cart-icon.svg"
             alt="carrito de compras"
             class="cart-icon"
-          />
+          /> -->
+          <i class="fa-solid fa-bag-shopping cart-icon"></i>
         </label>
         <input type="checkbox" id="cart-toggle" />
 
@@ -173,13 +212,15 @@
           <!-- BOTON DE COMPRAR -->
           <button class="btn-add">Comprar</button>
         </div>
+
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
       <!-- HERO -->
       <section id="hero">
         <div class="hero-info">
-          <h1>Descubre la nueva era de Crypto</h1>
+          <h1>Descubre la nueva era de <span>Crypto</span></h1>
           <p>
             NUCBA NFT es el primer Marketplace educativo tecnológico de NFT, que
             son elementos digitales épicos que realmente puedes poseer. Los
