@@ -32,16 +32,16 @@ Escribe un programa que recorra los números del 1 a X. Por cada número, verifi
 
 ### Ejercicio 8: Tabla de Multiplicar Personalizada
 
-Escribe un programa que tome un número como entrada y genere su tabla de multiplicar del 1 al 10. Para cada multiplicación, muestra un mensaje que indique la multiplicación en formato "número x multiplicador = resultado"
+Escribe un funcion que tome un número como entrada y genere su tabla de multiplicar del 1 al 10. Para cada multiplicación, muestra un mensaje que indique la multiplicación en formato "número x multiplicador = resultado"
 
-### Ejercicio 9: Sistema de velocidad
+### Ejercicio 9: Contador Regresivo Personalizado
+
+Escribe un funcion que tome un número como entrada y genere un contador regresivo desde ese número hasta 1. Muestra cada número del contador en una línea separada.
+
+### Ejercicio 10: Sistema de velocidad
 
 Escribe una función que verifique la entrada/parámetro proporcionado:
 
-- Si la entrada está por debajo del límite de velocidad de 70, imprime: 'Conduccion segura'.
+- Si la velocidad está por debajo del límite de velocidad de 70, imprime: 'Conduccion segura'.
 - Si la entrada está por encima del límite de velocidad de 70, cada 5 kilómetros de exceso corresponde a un punto de penalización. Imprime: 'Límite de velocidad superado por Punto de Penalización' + Punto.
 - Si el conductor acumula más de 10 puntos de penalización, es decir, supera el límite de velocidad de 120, imprime: 'Licencia suspendida'.
-
-### Ejercicio 10: Contador Regresivo Personalizado
-
-Escribe un programa que tome un número como entrada y genere un contador regresivo desde ese número hasta 1. Muestra cada número del contador en una línea separada.
